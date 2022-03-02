@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+		<title>뭉개구름</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome-ie7.min.css">
+  		<meta property="og:url" content="https://jgoorm.me/">
+  		<meta property="og:title" content="뭉개구름">
+  		<meta property="og:type" content="website">
+  		<meta property="og:image" content="images/a">
+  		<meta property="og:description" content="뭉개구름">
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="icon" href="/favicon.ico">
+		<body oncontextmenu="return false"> </body>
+		<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false"> </body>
+		<script type="text/javascript">
+			// F12 버튼 방지
+			$(document).ready(function(){
+				$(document).bind('keydown',function(e){5
+					if ( e.keyCode == 123 /* F12 */) {
+						e.preventDefault();
+						e.returnValue = false; } }); }); // 우측 클릭 방지
+			document.onmousedown=disableclick; status="Right click is not available."; function disableclick(event){ if (event.button==2) { alert(status); return false; } } </script>
+	</head>
+<body>
+    darklytetv has <a id="followers"></a> followers
+<script>
+var ve = document.getElementById('followers');
+setInterval(_ => {
+    fetch('https://api.twitch.tv/hi_1206', {
+        headers: new Headers({
+            'Client-Id': '//',
+            'Accept': 'application/vnd.twitchtv.v5+json'
+        })
+    }).then(response => response.json()).then(data => {
+        ve.textContent = data.followers;
+    });
+}, 10000);
+</script>
+</body>

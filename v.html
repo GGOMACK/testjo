@@ -1,0 +1,194 @@
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>뭉개구름</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome-ie7.min.css">
+  		<meta property="og:url" content="https://jgoorm.me/">
+  		<meta property="og:title" content="뭉개구름">
+  		<meta property="og:type" content="website">
+  		<meta property="og:image" content="images/a">
+  		<meta property="og:description" content="뭉개구름">
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="icon" href="/favicon.ico">
+		<body oncontextmenu="return false"> </body>
+		<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false"> </body>
+		<script type="text/javascript">
+			// F12 버튼 방지
+			$(document).ready(function(){
+				$(document).bind('keydown',function(e){
+					if ( e.keyCode == 123 /* F12 */) {
+						e.preventDefault();
+						e.returnValue = false; } }); }); // 우측 클릭 방지
+			document.onmousedown=disableclick; status="Right click is not available."; function disableclick(event){ if (event.button==2) { alert(status); return false; } } </script>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<span class="logo"></span>
+						<h1>응애</h1>
+						<p>응애 <a href="twitch link">트위치</a> 오라이
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav" size="100%">
+						<ul>
+							<li><a href="#1" class="active">1</a></li>
+							<li><a href="#2">2</a></li>
+							<li><a href="#3">3</a></li>
+							<li><a href="#4">4</a></li>
+							<li><a href="#5">5</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Introduction -->
+							<section id="1" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>이것은 이름이여</h2>
+										</header>
+										<p>거시기 하네</p>
+										<ul class="actions">
+											<li><a href="1.html" class="button">이것은 버튼이여</a></li>
+										</ul>
+									</div>
+									<span class="image"><img src="images/9e1053376d842d029a34d1099cac2b448788d5b9_s1_n1.png" alt="" /></span>
+								</div>
+							</section>
+
+
+						<!-- Second Section -->
+							<section id="2" class="main special">
+								<header class="major">
+									<h2>이것은 제목이여</h2>
+									<p>이것은 내용이여</p>
+								</header>
+								<ul class="statistics">
+									<li class="style1">
+										<i class="fab fa-twitch fa-3x"></i>
+										<br><br><strong>5,120</strong> 팔로워
+									</li>
+									<li class="style2">
+										<i class="fas fa-sticky-note fa-3x"></i>
+										<br><br><strong>8,192</strong> none
+									</li>
+									<li class="style3">
+										<i class="fas fa-sticky-note fa-3x"></i>
+										<br><br><strong>2,048</strong> none
+									</li>
+									<li class="style4">
+										<i class="fas fa-sticky-note fa-3x"></i>
+										<br><br><strong>4,096</strong> none
+									</li>
+									<li class="style5">
+										<i class="fas fa-sticky-note fa-3x"></i>
+										<br><br><strong>1,024</strong> none
+									</li>
+								</ul>
+								<p class="content">이것은 내용이여</p>
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="1" class="button">Learn More</a></li>
+									</ul>
+								</footer>
+							</section>
+
+						<!-- Get Started -->
+							<section id="3" class="main special">
+								<header class="major">
+									<h2>이것은 제목이여</h2>
+									<p>이것은 내용이여</p>
+								</header>
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="1.html" class="button primary">응</a></li>
+										<li><a href="1.html" class="button">애</a></li>
+									</ul>
+								</footer>
+							</section>
+
+							<section id="4" class="main special">
+								<header class="major">
+									<body>
+    									<div class="counter" style="font-size:500% "></div>
+
+    									<script>
+        									let counter = document.querySelector('.counter');
+        									let today = new Date(), //현재 날짜 가져오기
+            									dday = new Date("Aug 15,2005, 00:00:00").getTime(), //디데이
+            									gap = today - dday
+            									result = Math.floor(gap / (1000 * 60 * 60 * 24));
+
+        										counter.innerHTML = `🎙+ ${result}`
+    									</script>
+									</body>
+								</header>
+							</section>
+
+						<section id="8" class="main speial">
+							<header class="marjor">
+								<body>
+									<div class="outer-div">
+										<!-- Add a placeholder for the Twitch embed -->
+										<div id="twitch-embed"></div>
+										<!-- Load the Twitch embed script -->
+										<script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+										<!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+    									<script type="text/javascript">
+      										new Twitch.Embed("twitch-embed", {
+        									top: "0px",
+        									left: "0px",
+											height: "auto",
+											transition: "transform 0.5s ease 0s",
+											transformorigin,
+											transform: "scale(1)",
+											channel: "bighead033",
+											theme: "dark",
+        									chat: "mobile",
+        									allowfullscreen: "true",
+        									layout: "video",
+											position: "absolute",
+											maxheight: "calc(100vh - 16rem)"
+											});
+    									</script>
+									</div>
+								</body>
+							</header>
+						</section>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2>이것은 뭐라하지</h2>
+							<p>이것은 내용이여</p>
+							<ul class="actions">
+							</ul>
+						</section>
+					</footer>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
